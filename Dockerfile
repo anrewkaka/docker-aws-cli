@@ -2,9 +2,9 @@ FROM docker:latest
 
 RUN apk add --no-cache aws-cli
 
-RUN mkdir ~/.aws
+RUN mkdir .aws
 
-WORKDIR ~/.aws
+WORKDIR .aws
 
-COPY credentials ~/.aws/credentials
-COPY config ~/.aws/config
+COPY credentials .aws/credentials
+COPY config .aws/config

@@ -8,6 +8,8 @@ WORKDIR /root/.aws
 
 COPY . .
 
-RUN chmod 777 entrypoint.sh
+COPY entrypoint.sh /root/entrypoint.sh
 
-ENTRYPOINT ["entrypoint.sh"]
+RUN chmod 777 /root/entrypoint.sh
+
+ENTRYPOINT ["/root/entrypoint.sh"]

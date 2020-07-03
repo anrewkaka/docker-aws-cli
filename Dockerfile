@@ -8,4 +8,4 @@ WORKDIR /root/.aws
 
 COPY . .
 
-ENTRYPOINT ["/bin/sh", "entrypoint.sh"]
+ENTRYPOINT ["./entrypoint.sh"]

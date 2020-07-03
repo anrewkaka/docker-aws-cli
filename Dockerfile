@@ -6,7 +6,6 @@ RUN mkdir /root/.aws
 
 WORKDIR /root/.aws
 
-COPY credentials .aws/credentials
-COPY config .aws/config
+COPY . .
 
 ENTRYPOINT ["/bin/sh", "entrypoint.sh"]

@@ -9,4 +9,4 @@ WORKDIR /root/.aws
 COPY credentials .aws/credentials
 COPY config .aws/config
 
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "entrypoint.sh"]

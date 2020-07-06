@@ -18,6 +18,6 @@ ENV ACCESS_KEY=
 ENV SECRET_KEY=
 ENV REGION=
 
-CMD sed -i 's/ACCESS_KEY/$ACCESS_KEY/g' credentials
-CMD sed -i 's/SECRET_KEY/$SECRET_KEY/g' credentials
-CMD sed -i 's/REGION/$REGION/g' config
+CMD sed -i 's/ACCESS_KEY/${ACCESS_KEY}/g' credentials
+CMD sed -i 's/SECRET_KEY/${SECRET_KEY}/g' credentials
+CMD sed -i 's/REGION/${REGION}/g' config
